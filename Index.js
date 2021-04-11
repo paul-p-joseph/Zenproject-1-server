@@ -53,5 +53,4 @@ app.delete('/delete-bill/:id',async(req,res) =>{
     } catch(error){console.log(error)}
 })
 
-
-app.listen(4000,()=> console.log("App runs with 4000"))
+app.listen(process.env.PORT || 5000, () => "App runs with some port");
